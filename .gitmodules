@@ -16,3 +16,54 @@
 [submodule "silverbullet"]
 	path = silverbullet
 	url = https://github.com/silverbulletmd/silverbullet.git
+[submodule "affine"]
+	path = affine
+	url = https://github.com/toeverything/AFFiNE.git
+[submodule "joplin"]
+	path = joplin
+	url = https://github.com/laurent22/joplin.git
+[submodule "siyuan"]
+	path = siyuan
+	url = https://github.com/siyuan-note/siyuan.git
+[submodule "outline"]
+	path = outline
+	url = https://github.com/outline/outline.git
+[submodule "khoj"]
+	path = khoj
+	url = https://github.com/khoj-ai/khoj.git
+[submodule "docmost"]
+	path = docmost
+	url = https://github.com/docmost/docmost.git
+[submodule "notesnook"]
+	path = notesnook
+	url = https://github.com/streetwriters/notesnook.git
+[submodule "marktext"]
+	path = marktext
+	url = https://github.com/marktext/marktext.git
+[submodule "zettlr"]
+	path = zettlr
+	url = https://github.com/Zettlr/Zettlr.git
+[submodule "vnote"]
+	path = vnote
+	url = https://github.com/vnotex/vnote.git
+[submodule "milkdown"]
+	path = milkdown
+	url = https://github.com/Milkdown/milkdown.git
+[submodule "evidence"]
+	path = evidence
+	url = https://github.com/evidence-dev/evidence.git
+[submodule "livebook"]
+	path = livebook
+	url = https://github.com/livebook-dev/livebook.git
+[submodule "pluto"]
+	path = pluto
+	url = https://github.com/JuliaPluto/Pluto.jl.git
+[submodule "deepnote"]
+	path = deepnote
+	url = https://github.com/deepnote/deepnote.git
+[submodule "mystmd"]
+	path = mystmd
+	url = https://github.com/jupyter-book/mystmd.git
+[submodule "notebook-kit"]
+	path = notebook-kit
+	url = https://github.com/observablehq/notebook-kit.git
