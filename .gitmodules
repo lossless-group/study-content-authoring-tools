@@ -1,0 +1,18 @@
+[submodule "baalda"]
+	path = baalda
+	url = https://github.com/naveedharri/baalda.git
+[submodule "logseq"]
+	path = logseq
+	url = https://github.com/logseq/logseq.git
+[submodule "anytype-ts"]
+	path = anytype-ts
+	url = https://github.com/anyproto/anytype-ts.git
+[submodule "appflowy"]
+	path = appflowy
+	url = https://github.com/AppFlowy-IO/AppFlowy.git
+[submodule "trilium"]
+	path = trilium
+	url = https://github.com/TriliumNext/Trilium.git
+[submodule "silverbullet"]
+	path = silverbullet
+	url = https://github.com/silverbulletmd/silverbullet.git
