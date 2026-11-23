@@ -31,6 +31,39 @@ Kickoff and full candidate list (including negative exemplars):
   store the human uses, and the tool treats those writes as first-class.
 - **(c) Live ecosystem.** Active maintenance and real users.
 
+## Pins last refreshed 2026-11-23
+
+Every submodule was moved to the latest commit on its upstream default branch.
+Each changed profile has a "Changes since the previous pin" section. Nothing
+was archived, renamed, or relicensed in this round. Khoj has had no commits
+since 2026-08-02.
+
+| Repo | Commit date, old → new | Commits | Nearest tag at new pin |
+|---|---|---|---|
+| [AFFiNE](./affine) | 2026-11-17 → 2026-11-23 | 8 | v2026.11.22-canary.1003 (canary) |
+| [Anytype](./anytype-ts) | 2026-11-10 → 2026-11-21 | 3 | v0.57.9-alpha |
+| [AppFlowy](./appflowy) | 2026-10-28 (unchanged) | 0 | 0.15.0 |
+| [Baalda](./baalda) | 2026-11-04 → 2026-11-20 | 38 | v0.1.113 |
+| [Deepnote](./deepnote) | 2026-11-19 (unchanged) | 0 | @deepnote/cli@0.13.0 |
+| [Docmost](./docmost) | 2026-11-19 → 2026-11-23 | 26 | v0.98.0 |
+| [Evidence](./evidence) | 2026-11-19 → 2026-11-22 | 5 | none (mirror; tags predate the Studio rewrite) |
+| [Joplin](./joplin) | 2026-11-19 → 2026-11-22 | 13 | server-v3.7.6 |
+| [Khoj](./khoj) | 2026-08-01 (unchanged) | 0 | 2.0.0-beta.28 |
+| [Livebook](./livebook) | 2026-11-17 → 2026-11-22 | 1 | nightly (rolling; main is 0.20.0-dev) |
+| [Logseq](./logseq) | 2026-11-19 → 2026-11-23 | 29 | nightly (rolling; last numbered 2.0.2) |
+| [MarkText](./marktext) | 2026-11-17 (unchanged) | 0 | v0.20.0 |
+| [Milkdown](./milkdown) | 2026-10-27 (unchanged) | 0 | v7.23.0 |
+| [mystmd](./mystmd) | 2026-11-18 → 2026-11-22 | 5 | citation-js-utils@1.2.11 (per-package tags) |
+| [Notebook Kit](./notebook-kit) | 2026-11-19 → 2026-11-22 | 6 | v2.11.0 |
+| [Notesnook](./notesnook) | 2026-11-17 → 2026-11-23 | 14 | 3.4.16-android |
+| [Outline](./outline) | 2026-11-19 → 2026-11-21 | 17 | v1.12.0 |
+| [Pluto](./pluto) | 2026-11-11 (unchanged) | 0 | v1.0.4-src |
+| [SilverBullet](./silverbullet) | 2026-11-18 → 2026-11-22 | 37 | 2.12.0 |
+| [SiYuan](./siyuan) | 2026-11-19 (unchanged) | 0 | v3.8.11 |
+| [Trilium](./trilium) | 2026-11-18 → 2026-11-22 | 309 | v0.108.0-rc.1 (new in range) |
+| [VNote](./vnote) | 2026-11-19 → 2026-11-23 | 16 | v4.15.1 (new in range) |
+| [Zettlr](./zettlr) | 2026-11-19 → 2026-11-22 | 9 | v4.10.0 |
+
 ## What we are looking at, repo by repo
 
 Working checklist for each entry:
@@ -50,7 +83,7 @@ Working checklist for each entry:
 | Bet | Entry | License |
 |---|---|---|
 | Plain `.md` on disk + real-time CRDT collaboration + built-in MCP endpoint | [Baalda](./baalda) | Apache-2.0 |
-| Outliner (every line is a block), local Markdown / org-mode files | [Logseq](./logseq) | AGPL-3.0 |
+| Block outliner; on master the graph is SQLite and Markdown is an import format plus a one-way mirror | [Logseq](./logseq) | AGPL-3.0 |
 | Block outliner storing `.sy` JSON on disk, with a local HTTP API | [SiYuan](./siyuan) | AGPL-3.0 |
 | Local-first encrypted object graph with P2P sync; Markdown export | [Anytype](./anytype-ts) | Source-available (Any Source Available License 1.0) |
 | Docs + whiteboard + database on a CRDT store | [AFFiNE](./affine) | Open core (MIT client, EE-licensed backend) |
@@ -99,10 +132,11 @@ Working checklist for each entry:
   claims to bridge the two, and ships an MCP endpoint for cloud agents.
 
 - **[Logseq](https://github.com/logseq/logseq)** — maintained by the
-  Logseq team. Outliner over local Markdown or org-mode files. Very actively
-  maintained. Here as the block-outline archetype: how does a block-first
-  model serialize to plain files, and what happens as the project moves
-  toward a database-backed version?
+  Logseq team. Started as an outliner over local Markdown or org-mode files;
+  on master, file graphs were removed in January 2026 and the graph now lives
+  in SQLite. Very actively maintained. Here as the block-outline archetype:
+  how does a block-first model serialize to plain files, and what happened
+  when the project moved to a database-backed version?
 
 - **[Anytype](https://github.com/anyproto/anytype-ts)** — maintained by
   Any Association. TypeScript desktop client; the core lives in
