@@ -49,6 +49,7 @@ since 2026-08-02.
 | [Evidence](./evidence) | 2026-11-19 → 2026-11-22 | 5 | none (mirror; tags predate the Studio rewrite) |
 | [Joplin](./joplin) | 2026-11-19 → 2026-11-22 | 13 | server-v3.7.6 |
 | [Khoj](./khoj) | 2026-08-01 (unchanged) | 0 | 2.0.0-beta.28 |
+| [LLM Wiki](./llmwiki) | new pin, 2026-11-09 | — | none (no tags) |
 | [Livebook](./livebook) | 2026-11-17 → 2026-11-22 | 1 | nightly (rolling; main is 0.20.0-dev) |
 | [Logseq](./logseq) | 2026-11-19 → 2026-11-23 | 29 | nightly (rolling; last numbered 2.0.2) |
 | [MarkText](./marktext) | 2026-11-17 (unchanged) | 0 | v0.20.0 |
@@ -93,6 +94,7 @@ Working checklist for each entry:
 | Hierarchical notes in SQLite, reachable via ETAPI | [Trilium](./trilium) | AGPL-3.0 |
 | Browser-based Markdown "power tool"; pages are Markdown files on a server | [SilverBullet](./silverbullet) | MIT |
 | AI-first second brain: an agent that reads and searches *your* notes | [Khoj](./khoj) | AGPL-3.0 |
+| AI-compiled wiki: an agent writes and maintains plain `.md` pages from your sources, over MCP | [LLM Wiki](./llmwiki) | Apache-2.0 |
 
 ### Team wikis & docs
 
@@ -157,6 +159,16 @@ Working checklist for each entry:
   maintained by Zef Hemel. Server-run, browser-based; pages are Markdown
   files on disk, extended with queries and scripting. Here as the
   "Markdown files, but programmable" end of the spectrum.
+
+- **[LLM Wiki](https://github.com/lucasastorian/llmwiki)** — maintained by
+  Lucas Astorian. Open-source take on Karpathy's "LLM Wiki" idea: you point
+  it at a folder of sources (PDFs, Office files, Markdown, web clips), and
+  Claude, connected over MCP, compiles a `wiki/` folder of plain Markdown
+  pages with required frontmatter, footnote citations back to sources, and a
+  lint tool for dangling links and stale pages. A nightly Claude Routine
+  keeps it current. Here as the inverse of Khoj: the agent is the *author*
+  of the Markdown store, not just its reader, and the same `VaultFS` tools
+  run over local files + SQLite or hosted Postgres + S3. Added 2026-11-27.
 
 ## Not pinned (yet)
 
